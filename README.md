@@ -1,8 +1,22 @@
 # RAG with Chainlit for PDF QA
 
-**No Installation Required:**
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Running the Application](#running-the-application)
+3. [Explanation of Code Cells](#explanation-of-code-cells)
+4. [Using the Application](#using-the-application)
+5. [Product Demo](#product-demo)
+6. [Acknowledgements](#acknowledgments)
 
-Users can directly run the application from the provided Colab link without installing any software or dependencies.
+
+## Introduction
+
+This project demonstrates a Retrieval-Augmented Generation (RAG) system built for answering questions about PDF documents. It leverages Chainlit to create a user-friendly web application where users can upload PDFs and ask questions directly within a chat interface. The application retrieves relevant information from the uploaded document and utilizes a powerful language model to generate informative answers.
+
+**Important Note for Running the Colab Notebook:**
+
+This project requires a GPU to function properly. When opening the Colab notebook, be sure to select "Runtime" -> "Change runtime type" and choose a GPU runtime option.
+
 
 ## Running the Application:
 
@@ -52,3 +66,69 @@ Users can directly run the application from the provided Colab link without inst
 1. **Upload a PDF or text file:** Click the upload button and select your file.
 2. **Ask a question:** Once the file is processed, type your question about the uploaded content in the chat interface.
 3. **Get the answer:** The application will use the RAG model to retrieve relevant information from the document and generate a response to your question.
+
+## Product Demo:
+
+**Step 1: Upload a PDF File**
+
+1. Once you have launched the Chainlit application, the interface will appear as shown in the image below.
+
+<p align='center'>
+  <img src='./assets/images/browse_file.png' height='90%' width='90%'>
+</p>
+
+2. Click on the "Choose File" button to upload the PDF file you want to use.
+
+3. Select the PDF file from your computer and click on the "Open" button.
+
+4. The PDF file will be uploaded to the application, and you will see a confirmation message.
+
+**Step 2: Ask a Question**
+
+1. After the PDF file has been successfully uploaded, you can start asking questions to the chatbot related to the content of the file.
+
+2. Type your question into the chat box at the bottom of the screen.
+
+3. Press Enter or click on the "Send" button to submit your question.
+
+<p align='center'>
+  <img src='./assets/images/question.png' height='90%' width='90%' >
+</p>
+
+**Step 3: Check the Chatbot's Response**
+
+1. The chatbot will process your question and respond within a few seconds.
+
+2. The response will be displayed in the chat box below your question.
+
+3. You can continue to ask additional questions or request the chatbot to elaborate on its response.
+
+<p align='center'>
+  <img src='./assets/images/answer1.png' height='90%' width='90%' >
+</p>
+
+<p align='center'>
+  <img src='./assets/images/answer2.png' height='90%' width='90%' >
+</p>
+
+<p align='center'>
+  <img src='./assets/images/answer3.png' height='90%' width='90%' >
+</p>
+
+<!-- **Example Images:**
+
+* **Image 1:** Chainlit application interface
+* **Image 2:** Chat box and "Send" button
+* **Image 3:** Example of a question
+* **Image 4:** Example of a response
+* **Image 5:** Example of a request for further explanation -->
+
+## Acknowledgments
+
+The development of this product was made possible through the contributions of several valuable resources and technologies:
+
+* **Vicuna-7b-v1.5:** This remarkable chatbot, trained by fine-tuning LLaMA on user-shared conversations from ShareGPT, surpasses OpenAI ChatGPT and Google Bard in dialogue tasks, achieving over 90% quality.
+
+* **Langchain:** This open-source language understanding framework played a crucial role in enabling the chatbot to process and interpret the nuances of human language. 
+
+* **Chainlit:** This innovative application provided the platform upon which the chatbot's functionalities were integrated. 
